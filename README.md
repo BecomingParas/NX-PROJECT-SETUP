@@ -481,7 +481,7 @@ State management: React Query + Zustand
 
 Logging: pino
 
-
+```
 
 ```
 nxproject
