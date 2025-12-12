@@ -1,0 +1,66 @@
+// {
+//   "extends": "../../tsconfig.base.json",
+//   "compilerOptions": {
+//     "jsx": "preserve",
+//     "allowJs": true,
+//     "esModuleInterop": true,
+//     "allowSyntheticDefaultImports": true,
+//     "strict": true,
+//     "forceConsistentCasingInFileNames": true,
+//     "noEmit": true,
+//     "resolveJsonModule": true,
+//     "isolatedModules": true,
+//     "incremental": true,
+//     "plugins": [
+//       {
+//         "name": "next"
+//       }
+//     ],
+//     "types": [
+//       "jest",
+//       "node"
+//     ]
+//   },
+//   "include": [
+//     "**/*.ts",
+//     "**/*.tsx",
+//     "**/*.js",
+//     "**/*.jsx",
+//     "../../apps/frontend/.next/types/**/*.ts",
+//     "../../dist/apps/frontend/.next/types/**/*.ts",
+//     "next-env.d.ts",
+//     ".next/types/**/*.ts"
+//   ],
+//   "exclude": [
+//     "node_modules",
+//     "jest.config.ts",
+//     "**/*.spec.ts",
+//     "**/*.test.ts"
+//   ]
+// }
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "../../dist/out-tsc",
+    "types": [
+      "node"
+    ],
+    "incremental": true,
+    "jsx": "preserve",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "../../dist/apps/frontend/.next/types/**/*.ts",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

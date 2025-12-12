@@ -1,0 +1,16 @@
+{
+  "name": "contract",
+  "sourceRoot": "libs/contract/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/contract",
+        "tsConfig": "libs/contract/tsconfig.lib.json",
+        "main": "libs/contract/src/index.ts"
+      }
+    }
+  }
+}

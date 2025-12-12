@@ -1,0 +1,64 @@
+// {
+//   "compileOnSave": false,
+//   "compilerOptions": {
+//     "rootDir": ".",
+//     "sourceMap": true,
+//     "declaration": false,
+//     "moduleResolution": "node",
+//     "emitDecoratorMetadata": true,
+//     "experimentalDecorators": true,
+//     "importHelpers": true,
+//     "target": "es2015",
+//     "module": "esnext",
+//     "lib": ["es2020", "dom"],
+//     "skipLibCheck": true,
+//     "skipDefaultLibCheck": true,
+//     "baseUrl": ".",
+//     "paths": {
+//       "@nxproject/auth": ["libs/auth/src/index.ts"],
+//       "@nxproject/contract": ["libs/contract/src/index.ts"],
+//       "@nxproject/core": ["libs/core/src/index.ts"],
+//       "@nxproject/database": ["libs/database/src/index.ts"]
+//     }
+//   },
+//   "exclude": ["node_modules", "tmp"]
+// }
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "lib": ["ESNext", "DOM"],
+    "moduleResolution": "Node",
+    "rootDir": ".",
+    "baseUrl": ".",
+    "paths": {
+      "@nxproject/auth": ["libs/auth/src/index.ts"],
+      "@nxproject/contract": ["libs/contract/src/index.ts"],
+      "@nxproject/core": ["libs/core/src/index.ts"],
+      "@nxproject/database": ["libs/database/src/index.ts"],
+      "@nxproject/*": ["libs/*/src"]
+    },
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "allowJs": false,
+    "noEmit": true
+  },
+  "exclude": ["node_modules", "tmp", "dist"],
+  "references": [
+    { "path": "apps/frontend" },
+    { "path": "apps/backend" },
+    { "path": "libs/auth" },
+    { "path": "libs/contract" },
+    { "path": "libs/core" },
+    { "path": "libs/database" }
+  ]
+}

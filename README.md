@@ -94,3 +94,107 @@ And join the Nx community:
 - [Follow us on X](https://twitter.com/nxdevtools) or [LinkedIn](https://www.linkedin.com/company/nrwl)
 - [Our Youtube channel](https://www.youtube.com/@nxdevtools)
 - [Our blog](https://nx.dev/blog?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+
+```
+nxproject
+├─ .editorconfig
+├─ .nx
+├─ .prettierignore
+├─ .prettierrc
+├─ apps
+│  ├─ backend
+│  │  ├─ eslint.config.js
+│  │  ├─ jest.config.ts
+│  │  ├─ project.json
+│  │  ├─ src
+│  │  │  ├─ assets
+│  │  │  └─ main.ts
+│  │  ├─ tsconfig.app.json
+│  │  ├─ tsconfig.json
+│  │  └─ tsconfig.spec.json
+│  ├─ backend-e2e
+│  │  ├─ eslint.config.js
+│  │  ├─ jest.config.ts
+│  │  ├─ project.json
+│  │  ├─ src
+│  │  │  ├─ backend
+│  │  │  │  └─ backend.spec.ts
+│  │  │  └─ support
+│  │  │     ├─ global-setup.ts
+│  │  │     ├─ global-teardown.ts
+│  │  │     └─ test-setup.ts
+│  │  ├─ tsconfig.json
+│  │  └─ tsconfig.spec.json
+│  └─ frontend
+│     ├─ eslint.config.js
+│     ├─ index.d.ts
+│     ├─ jest.config.ts
+│     ├─ next-env.d.ts
+│     ├─ next.config.js
+│     ├─ postcss.config.js
+│     ├─ project.json
+│     ├─ public
+│     │  └─ favicon.ico
+│     ├─ specs
+│     │  └─ index.spec.tsx
+│     ├─ src
+│     │  └─ app
+│     │     ├─ api
+│     │     │  └─ hello
+│     │     ├─ global.css
+│     │     └─ page.tsx
+│     ├─ tailwind.config.js
+│     ├─ tsconfig.json
+│     └─ tsconfig.spec.json
+├─ eslint.config.js
+├─ jest.config.ts
+├─ jest.preset.js
+├─ libs
+│  ├─ auth
+│  │  ├─ eslint.config.js
+│  │  ├─ project.json
+│  │  ├─ README.md
+│  │  ├─ src
+│  │  │  ├─ index.ts
+│  │  │  └─ lib
+│  │  │     └─ auth.ts
+│  │  ├─ tsconfig.json
+│  │  └─ tsconfig.lib.json
+│  ├─ contract
+│  │  ├─ eslint.config.js
+│  │  ├─ project.json
+│  │  ├─ README.md
+│  │  ├─ src
+│  │  │  ├─ index.ts
+│  │  │  └─ lib
+│  │  │     └─ contract.ts
+│  │  ├─ tsconfig.json
+│  │  └─ tsconfig.lib.json
+│  ├─ core
+│  │  ├─ eslint.config.js
+│  │  ├─ project.json
+│  │  ├─ README.md
+│  │  ├─ src
+│  │  │  ├─ index.ts
+│  │  │  └─ lib
+│  │  │     └─ core.ts
+│  │  ├─ tsconfig.json
+│  │  └─ tsconfig.lib.json
+│  └─ database
+│     ├─ eslint.config.js
+│     ├─ project.json
+│     ├─ README.md
+│     ├─ src
+│     │  ├─ index.ts
+│     │  └─ lib
+│     │     └─ database.ts
+│     ├─ tsconfig.json
+│     └─ tsconfig.lib.json
+├─ nx.json
+├─ package-lock.json
+├─ package.json
+├─ README.md
+├─ tsconfig.base.json
+└─ yarn.lock
+
+```
