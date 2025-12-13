@@ -1,0 +1,39 @@
+generator client{
+    provider = "prisma-client-js"
+    output = "../../../../node_modules/.prisma/client"
+}
+datasource db {
+  provider = "postgresql"
+//   url      = env("DATABASE_URL")
+}
+
+generator zod {
+  provider                         = "npx zod-prisma-types"
+  output                           = "../../../contract/src/__generated__"
+  prismaClientPath                 = ".prisma/client"
+  useMultipleFiles                 = false
+  writeBarrelFiles                 = false
+  createInputTypes                 = false
+  addInputTypeValidation           = false
+  addIncludeType                   = false
+  addSelectType                    = false
+  validateWhereUniqueInput         = true
+  createOptionalDefaultValuesTypes = false
+  createRelationValuesTypes        = false
+  createPartialTypes               = false
+  useDefaultValidators             = false
+  coerceDate                       = true
+  writeNullishInModelTypes         = false
+}
+
+model Todo {
+  id           String    @id @default(cuid())
+  name         String
+  description  String
+  created_at   DateTime  @default(now())
+  updated_at   DateTime  @updatedAt
+  is_deleted   Boolean   @default(false)
+  deleted_at   DateTime?
+  is_completed Boolean   @default(false)
+  completed_at DateTime?
+}
