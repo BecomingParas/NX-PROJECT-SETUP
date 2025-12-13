@@ -1,0 +1,13 @@
+services:
+  postgres:
+    image: postgres:latest
+    container_name: nxproject_postgres
+    environment:
+      POSTGRES_DB: nxproject_db
+      POSTGRES_USER: paras
+      POSTGRES_PASSWORD: paras123
+    volumes:
+      - ./data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"   # <--- map host port 5432 to container port 5432
+    restart: always
